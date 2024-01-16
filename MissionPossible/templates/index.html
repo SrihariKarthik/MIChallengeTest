@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{%block content%}
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      margin-right: 16px;
+      margin-left: 16px;
+	  
+    }
+
+	#container{
+        text-align: center;
+	}
+
+
+	.button1 {
+		background-image: url("../static/Picture1.png");
+		background-size:cover;
+		
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block
+		font-size: 16px;
+	  }
+
+	.button2 {
+		
+		background-image: url("../static/Picture2.png");
+		background-size:cover;
+		
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block
+		font-size: 16px;
+	  }
+
+	  .button3 {
+		
+		background-image: url("../static/Picture3.png");
+		background-size:cover;
+		
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block
+		font-size: 16px;
+	  }
+
+
+	  .button4 {
+		
+		background-image: url("../static/Picture4.png");
+		background-size:cover;
+		font-family: Fantasy
+		
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block
+		font-size: 16px;
+	  }
+
+	  .button5 {
+		
+		background-image: url("../static/Picture5.png");
+		background-size:cover;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		display: inline-block
+		font-size: 16px;
+	  }
+  </style>
+
+
+  <div id="container">
+	<br>
+	<br>
+   <a href={{url_for('Picture1View')}}> <button class='Button1'>Picture 1</button> </a>
+	<br>
+	<br>
+	<a href={{url_for('Picture2View')}}> <button id='2' class='Button2'>Picture 2</button></a>
+	<br>
+	<br>
+    <a href={{url_for('Picture3View')}}><button class='Button3'>Picture 3</button></a>
+	<br>
+	<br>
+    <a href={{url_for('Picture4View')}}><button class='Button4'>Picture 4</button></a>
+	<br>
+	<br>
+    <a href={{url_for('Picture5View')}}><button class='Button5'>Picture 5</button></a>
+	<br>
+  </div>
+  
+{%endblock%}
